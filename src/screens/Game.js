@@ -2,8 +2,7 @@ import React from 'react';
 import MainGame from '../components/MainGame'
 import UserGame from '../components/UserGame'
 
-function Game({userGithub}) {
-    const [avatarHP,setAvatarHP] = React.useState(1000)
+function Game({userGithub,avatarHP,setAvatarHP}) {
 
   return (
   <div>
