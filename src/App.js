@@ -1,13 +1,14 @@
-import React from "react";
-import Menu from "./screens/Menu/Menu";
-import Game from "./screens/Game";
-import GameOver from "./screens/GameOver";
+import React from 'react';
+import Menu from './screens/Menu/Menu';
+import Game from './screens/Game';
+import GameOver from './screens/GameOver';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   const [userGithub, setUserGithub] = React.useState(null);
   const [avatarHP, setAvatarHP] = React.useState(1000);
   const [userScore, setUserScore] = React.useState(0);
   const [gameTime, setGameTime] = React.useState(60);
-  const [gameOver, setGameOver] = React.useState(false);
 
   if (userGithub === null) {
     return (
@@ -26,7 +27,6 @@ function App() {
           setGameTime={setGameTime}
           userScore={userScore}
           setUserScore={setUserScore}
-          setGameOver={setGameOver}
         />
       </div>
     );
@@ -41,7 +41,6 @@ function App() {
         setUserScore={setUserScore}
         gameTime={gameTime}
         setGameTime={setGameTime}
-        gameOver={gameOver}
       />
     </div>
   );

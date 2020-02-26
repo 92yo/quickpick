@@ -1,4 +1,5 @@
 import React from "react";
+import './userGame.css'
 
 function UserGame({avatarHP, setAvatarHP }) {
   const [pickColor, setPickColor] = React.useState('red');
@@ -15,10 +16,15 @@ return Math.floor(Math.random()*Math.floor(max))
 
 
   return (
-    <div style={{ backgroundColor: pickColor }}>
+    <div>
+      <div className= "colorBox" style={{ backgroundColor: pickColor }}>
+        
+      </div>
+    <div>
       <button style={{ backgroundColor: 'red' }} onClick={()=>pickedColor('red')}>Pick Red</button>
       <button style={{ backgroundColor: 'green' }} onClick={()=>pickedColor('green')}>Pick Green</button>
       <button style={{ backgroundColor: 'yellow' }} onClick={()=>pickedColor('yellow')}>Pick Yellow</button>
+    </div>
     </div>
   );
 }

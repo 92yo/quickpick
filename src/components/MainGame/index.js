@@ -6,7 +6,7 @@ function MainGame({userGithub,avatarHP}) {
 
   React.useEffect(()=>{
     getUserData(userGithub).then(data => setGithubProfile(data));
-  },[])
+  })
 
   if (!githubProfile) {
     return <h3>...Loading</h3>;
@@ -14,7 +14,7 @@ function MainGame({userGithub,avatarHP}) {
   return (
   <div>
     <div className="healthBar"><label>{userGithub} HP: <span id="health">{avatarHP}</span></label></div>
-      <img src={githubProfile.avatar_url} />
+      <img src={githubProfile.avatar_url} alt="userImage" />
   </div>
   );
 }
