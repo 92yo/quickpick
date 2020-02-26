@@ -8,7 +8,7 @@ function Menu({setUserGithub}) {
 document.getElementById('submit').addEventListener('click',()=>{
   setUserGithub(input.value);
 })
-  },[])
+  })
 
   return (
     <form>
