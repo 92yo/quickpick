@@ -1,0 +1,13 @@
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+#heart {
+    font-size: x-large;
+    color: rgb(219, 71, 71);
+}
+
+#fire {
+    color: black;
+}
