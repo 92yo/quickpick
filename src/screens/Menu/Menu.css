@@ -1,0 +1,21 @@
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Menu{
+width: 70vw;
+height: 700px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+background-color: red;
+}
+label,h1,button{
+    margin: 25px;
+    padding: 5px;
+}
+#submit{
+    width: 70%;
+}
