@@ -16,12 +16,14 @@ function GameOver({userGithub, setUserGithub, setAvatarHP}) {
       })
   return (
     <form className="Menu">
-      <h1>{userGithub}</h1>
-      <h1>GameOver</h1>
-      <button id="playAgain">Play again</button>
-      <button id="logout">Logout</button>
 
-       </form>
+    <h1>{userGithub}</h1>
+    <h1>GameOver</h1>
+    <div className="form-group">
+    <button id="playAgain" className="btn btn-primary btn-block">Play again</button>
+      <button id="logout" className="btn btn-primary btn-block">Logout</button>
+    </div>    
+    </form>
   );
 }
 
