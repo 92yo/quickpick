@@ -9,7 +9,7 @@ return Math.floor(Math.random()*Math.floor(max))
 }
   const pickedColor = (color) => {   
       if(pickColor!==color){setStreak(1);setAvatarHP(avatarHP+10)}
-      else{setStreak(streak+1);setAvatarHP(avatarHP-(10*streak))}
+      else{setStreak(streak+1);setAvatarHP(avatarHP-(100*streak))}
     setPickColor(colors[getRandomInt(3)]);
   };
 
