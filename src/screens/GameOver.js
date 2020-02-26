@@ -13,7 +13,7 @@ function GameOver({userGithub, setUserGithub, setAvatarHP}) {
         setUserGithub(null);
         setAvatarHP(1000);
       })
-      },[])
+      })
   return (
     <form className="Menu">
       <h1>{userGithub}</h1>
