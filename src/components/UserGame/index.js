@@ -5,6 +5,7 @@ function UserGame({ avatarHP, setAvatarHP }) {
   const [pickColor, setPickColor] = React.useState("red");
   const [streak, setStreak] = React.useState(1);
 
+
   const colors = ["red", "green", "yellow"];
   const getRandomInt = max => {
     return Math.floor(Math.random() * Math.floor(max));
