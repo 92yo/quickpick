@@ -1,4 +1,3 @@
-import { accessToken } from "../token";
 const API_BASE = "https://api.github.com";
 
 const checkResponse = response => {
@@ -10,7 +9,7 @@ const checkResponse = response => {
 };
 
 export const getUserData = username => {
-  return fetch(`${API_BASE}/users/${username}?access_token=${accessToken}`)
+  return fetch(`${API_BASE}/users/${username}?access_token=${process.env.accesstoken}`)
     .then(checkResponse)
     .catch(err => {
       throw new Error(`fetch getUserData failed ${err}`);
