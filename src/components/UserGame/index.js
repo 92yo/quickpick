@@ -1,9 +1,10 @@
 import React from "react";
-import './userGame.css'
+import "./userGame.css";
 
-function UserGame({avatarHP, setAvatarHP }) {
-  const [pickColor, setPickColor] = React.useState('red');
+function UserGame({ avatarHP, setAvatarHP }) {
+  const [pickColor, setPickColor] = React.useState("red");
   const [streak, setStreak] = React.useState(1);
+
   function Shuffle(arr) {
 	for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
 	return arr;
@@ -28,6 +29,7 @@ let colors=['red','green','yellow']
       <button style={{ backgroundColor: colors[1] }} onClick={()=>pickedColor(colors[1])}>Pick {colors[1]}</button>
       <button style={{ backgroundColor: colors[2] }} onClick={()=>pickedColor(colors[2])}>Pick {colors[2]}</button>
     </div>
+
     </div>
   );
 }

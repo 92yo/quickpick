@@ -1,13 +1,15 @@
 import React from 'react';
 import MainGame from '../components/MainGame'
 import UserGame from '../components/UserGame'
+import UserInfo from '../components/UserInfo'
 
-function Game({userGithub,avatarHP,setAvatarHP}) {
+function Game(props) {
 
   return (
   <div>
-     <MainGame userGithub={userGithub} avatarHP={avatarHP}/>
-     <UserGame avatarHP={avatarHP} setAvatarHP={setAvatarHP}/>
+     <UserInfo {...props}/>
+     <MainGame {...props}/>
+     <UserGame {...props}/>
   </div>
   );
 }
