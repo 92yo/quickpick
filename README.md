@@ -1,7 +1,8 @@
 # Doodling
 By: @92yo , @FrancisA2000 , @hadeel11 @LinaQ95
 
-## Quickly Pick the colors corresponding to the appropriate button, You win by either eliminating the Boss (you) which has 1000HP. Make sure you finish before the timer runs out, and try not to make more than 3 mistakes or its Game Over :(
+## Quickly Pick the colors corresponding to the appropriate button, You win by either eliminating the Boss (you) which has 1000HP. 
+## Make sure you finish before the timer runs out, and try not to make more than 3 mistakes or its Game Over :(
 
 ---
 
@@ -77,7 +78,7 @@ Using React turned out to be harder than expected we had some struggle with thin
 
 ## :fast_forward:  Current limitations and future goals
 ### Limitations:
-- The app works but buttons shuffle rather quickly making it harder :S.
+- The app works but buttons shuffle rather quickly making it harder.
 - No option of choosing a difficulty.
 - No database to save the current connected user score and best time.
 
