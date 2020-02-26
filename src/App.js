@@ -2,6 +2,8 @@ import React from 'react';
 import Menu from './screens/Menu/Menu';
 import Game from './screens/Game';
 import GameOver from './screens/GameOver';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   const [userGithub,setUserGithub] = React.useState(null)
   const [avatarHP,setAvatarHP] = React.useState(1000)

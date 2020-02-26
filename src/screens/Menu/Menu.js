@@ -11,12 +11,19 @@ document.getElementById('submit').addEventListener('click',()=>{
   },[])
 
   return (
-    <form className="Menu">
-      <h1>Enter your github username</h1>
-      <label>username: <input id="userInput"></input></label>
-      <button id="submit">Start</button>
+    <form>
 
-       </form>
+    <h1>Enter Your GitHub Username</h1>
+
+    <div className="form-group">
+        <h3><label>UserName</label></h3>
+        <input type="text" id="userInput" className="form-control" placeholder="Username" />
+    </div>
+
+    <button type="submit" id="submit" className="btn btn-primary btn-block">Start Game</button>
+    
+    </form>
+    
   );
 }
 
