@@ -13,14 +13,12 @@ function GameOver({
 }) {
   React.useEffect(() => {
     document.getElementById("playAgain").addEventListener("click", () => {
-      setGameOver(false);
       setAvatarHP(1000);
       setGameTime(60);
       setUserScore(0);
     });
 
     document.getElementById("logout").addEventListener("click", () => {
-      setGameOver(false);
       setUserGithub(null);
       setAvatarHP(1000);
       setGameTime(60);
