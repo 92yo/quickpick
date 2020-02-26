@@ -15,7 +15,7 @@ function UserInfo({
     }, 1000);
 
     return () => clearTimeout(gameTimeTimeout);
-  }, [gameTime]);
+  });
 
   return (
     <div>
