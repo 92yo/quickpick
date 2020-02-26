@@ -24,7 +24,7 @@ function GameOver({
       setGameTime(60);
       setUserScore(0);
     });
-  }, []);
+  });
 
   let message = "GAME WON!!!!";
   if (gameTime <= 0) {

@@ -19,9 +19,7 @@ document.getElementById('submit').addEventListener('click',()=>{
         <h3><label>UserName</label></h3>
         <input type="text" id="userInput" className="form-control" placeholder="Username" />
     </div>
-
     <button type="submit" id="submit" className="btn btn-primary btn-block">Start Game</button>
-    
     </form>
     
   );
