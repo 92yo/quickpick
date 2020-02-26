@@ -9,7 +9,9 @@ function GameOver({
     gameTime,
     setGameTime,
     userScore,
-    setUserScore
+    setUserScore,
+    userHealth,
+    setUserHealth
 }) {
 
   React.useEffect(() => {
@@ -17,6 +19,7 @@ function GameOver({
       setAvatarHP(1000);
       setGameTime(60);
       setUserScore(0);
+      setUserHealth(3);
     });
 
     document.getElementById("logout").addEventListener("click", () => {
@@ -24,11 +27,12 @@ function GameOver({
       setAvatarHP(1000);
       setGameTime(60);
       setUserScore(0);
+      setUserHealth(3);
     });
   });
 
     let message = "GAME WON!!!!";
-    if (gameTime <= 0) {
+    if (gameTime <= 0 || userHealth <= 0) {
         message = "GAME LOST";
     }
     return (
@@ -36,6 +40,7 @@ function GameOver({
             <h1>{userGithub}</h1>
             <h1>{message}</h1>
             <h2>Your score is: {userScore}</h2>
+            <h3>Your Time: {60 - gameTime} seconds</h3>
             <div className="form-group">
                 <button id="playAgain" className="btn btn-primary btn-block">
                     Play again

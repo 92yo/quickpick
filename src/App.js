@@ -9,6 +9,7 @@ function App() {
   const [avatarHP, setAvatarHP] = React.useState(1000);
   const [userScore, setUserScore] = React.useState(0);
   const [gameTime, setGameTime] = React.useState(60);
+  const [userHealth, setUserHealth] = React.useState(3);
 
   if (userGithub === null) {
     return (
@@ -16,7 +17,7 @@ function App() {
         <Menu setUserGithub={setUserGithub} />
       </div>
     );
-  } else if (avatarHP <= 0 || gameTime <= 0) {
+  } else if (avatarHP <= 0 || gameTime <= 0 || userHealth <= 0) {
     return (
       <div>
         <GameOver
@@ -27,6 +28,8 @@ function App() {
           setGameTime={setGameTime}
           userScore={userScore}
           setUserScore={setUserScore}
+          userHealth={userHealth}
+          setUserHealth={setUserHealth}
         />
       </div>
     );
@@ -41,6 +44,8 @@ function App() {
         setUserScore={setUserScore}
         gameTime={gameTime}
         setGameTime={setGameTime}
+        userHealth={userHealth}
+        setUserHealth={setUserHealth}
       />
     </div>
   );
