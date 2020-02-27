@@ -39,6 +39,12 @@ https://vigilant-colden-adc3b2.netlify.com
 5. The server is now running at localhost:3000
 6. Open localhost:3000 in your browser!
 7. Type in your GitHub username
+
+Setting up enviorment variables:
+Requirements : GitHub API access token.
+
+Create a .env file in the directory. inside enter : REACT_APP_accesstoken='Your API token'
+
 ---
 
 
