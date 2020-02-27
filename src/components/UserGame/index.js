@@ -3,8 +3,7 @@ import "./userGame.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 
-function UserGame({ avatarHP, setAvatarHP, userHealth, setUserHealth, userScore, setUserScore }) {
-  const [pickColor, setPickColor] = React.useState("red");
+function UserGame({ avatarHP, setAvatarHP, userHealth, setUserHealth, userScore, setUserScore, pickColor, setPickColor }) {
   const [streak, setStreak] = React.useState(1);
 
 
