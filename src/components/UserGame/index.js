@@ -3,8 +3,7 @@ import "./userGame.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFire } from "@fortawesome/free-solid-svg-icons";
 
-function UserGame({ avatarHP, setAvatarHP, userHealth, setUserHealth, userScore, setUserScore }) {
-  const [pickColor, setPickColor] = React.useState("red");
+function UserGame({ avatarHP, setAvatarHP, userHealth, setUserHealth, userScore, setUserScore, pickColor, setPickColor }) {
   const [streak, setStreak] = React.useState(1);
 
 
@@ -40,8 +39,8 @@ function UserGame({ avatarHP, setAvatarHP, userHealth, setUserHealth, userScore,
           <h2>
             <center>
               <span>
-                Combo X {streak * 10}
-                <FontAwesomeIcon id="fire" icon={faFire} />{" "}
+                Combo X {streak * 10}{" "}
+                <FontAwesomeIcon id="fire" icon={faFire} />
               </span>
             </center>
           </h2>
@@ -52,7 +51,7 @@ function UserGame({ avatarHP, setAvatarHP, userHealth, setUserHealth, userScore,
           <h3>
             <center>
               <span>
-                <FontAwesomeIcon id="fire" icon={faFire} /> Your on fire{" "}
+                <FontAwesomeIcon id="fire" icon={faFire} /> Your on fire {" "}
                 <FontAwesomeIcon id="fire" icon={faFire} />
               </span>
             </center>
@@ -66,19 +65,19 @@ function UserGame({ avatarHP, setAvatarHP, userHealth, setUserHealth, userScore,
           style={{ backgroundColor: colors[0] }}
           onClick={() => pickedColor(colors[0])}
         >
-          Pick {colors[0]}
+          {colors[0]}
         </button>
         <button
           style={{ backgroundColor: colors[1] }}
           onClick={() => pickedColor(colors[1])}
         >
-          Pick {colors[1]}
+          {colors[1]}
         </button>
         <button
           style={{ backgroundColor: colors[2] }}
           onClick={() => pickedColor(colors[2])}
         >
-          Pick {colors[2]}
+          {colors[2]}
         </button>
       </div>
     </div>

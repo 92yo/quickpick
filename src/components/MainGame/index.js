@@ -1,8 +1,9 @@
 import React from "react";
 import { getUserData } from "../../utils/GetUserGH";
 import "./mainGame.css";
-function MainGame({ userGithub, avatarHP }) {
+function MainGame({ userGithub, avatarHP ,pickColor}) {
   const [githubProfile, setGithubProfile] = React.useState(null);
+
 
   React.useEffect(() => {
     getUserData(userGithub).then(data => setGithubProfile(data));
@@ -18,13 +19,15 @@ function MainGame({ userGithub, avatarHP }) {
     );
   }
   return (
-    <div>
+    <div className="avatarDiv"  >
       <div className="healthBar">
         <label>
           {userGithub} HP: <span id="health">{avatarHP}</span>
         </label>
       </div>
+      <div style={{ backgroundColor: pickColor }}>
       <img src={githubProfile.avatar_url} alt="userImage" />
+      </div>
     </div>
   );
 }
